@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header with Flexbox -->
+  <header class="header">
+    <div class="logo">🏨 Paradise Hotel</div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Rooms</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Booking</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Paradise Hotel</h1>
+    <p>Relax, Stay, and Enjoy Luxury Living</p>
+    <button class="btn">Book Now</button>
+  </section>
+
+  <!-- Main layout using Grid -->
+  <main class="main-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Special Offers</h2>
+      <ul>
+        <li>20% Off Weekend Stays</li>
+        <li>Free Breakfast Package</li>
+        <li>Spa & Wellness Combo</li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <section class="content">
+      <h2>Our Rooms</h2>
+      <div class="room-cards">
+        <div class="card">
+          <img src="https://images.pexels.com/photos/1861153/pexels-photo-1861153.jpeg" width="300" height="200" alt="Deluxe Room">
+          <h3>Deluxe Room</h3>
+          <p>Ksh 12000/night</p>
+        </div>
+        <div class="card">
+          <img src="https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg" width="300" height="200" alt="Suite">
+          <h3>Executive Suite</h3>
+          <p>Ksh 21000/night</p>
+        </div>
+        <div class="card">
+          <img src="https://images.pexels.com/photos/15824906/pexels-photo-15824906.jpeg" width="300" height="200" alt="Family Room">
+          <h3>Family Room</h3>
+          <p>Ksh 16000/night</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Services Section with Grid -->
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service">🍽 Restaurant</div>
+      <div class="service">🏊 Swimming Pool</div>
+      <div class="service">💆 Spa & Wellness</div>
+      <div class="service">🏢 Conference Hall</div>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="booking">
+    <h2>Book Your Stay</h2>
+    <form>
+      <label>Check-in Date: <input type="date"></label>
+      <label>Check-out Date: <input type="date"></label>
+      <label>Guests: <input type="number" min="1" max="10"></label>
+      <button type="submit" class="btn">Confirm Booking</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>📍 345 Beach Road, Mombasa | 📞 +254 746 898 456 | ✉ info@paradise1hotel.com</p>
+    <p>&copy; 2025 Paradise Hotel. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+ul {
+  list-style: none;
+}
+.btn {
+  background: #0077b6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.btn:hover {
+  background: #023e8a;
+}
+
+/* Header (Flexbox) */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #48cae4;
+  padding: 15px 30px;
+}
+.nav ul {
+  display: flex;
+  gap: 15px;
+}
+.nav a:hover {
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://via.placeholder.com/1200x400') center/cover no-repeat;
+  text-align: center;
+  color: white;
+  padding: 100px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+/* Main Layout (Grid) */
+.main-layout {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+  padding: 20px;
+}
+.sidebar {
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+}
+.content .room-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  flex: 1 1 calc(33.333% - 20px);
+  background: #e9ecef;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Services (Grid) */
+.services {
+  padding: 20px;
+  background: #caf0f8;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.service {
+  background: #90e0ef;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* Booking Form */
+.booking {
+  padding: 20px;
+  background: #f8f9fa;
+}
+.booking form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.booking label {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer */
+.footer {
+  background: #03045e;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+  }
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .content .room-cards {
+    flex-direction: column;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
